@@ -4,7 +4,9 @@
 	"description": "My Remotion video",
 	"scripts": {
 		"dev": "remotion preview src/index.tsx",
-		"build": "remotion render src/index.tsx Stinger out/stinger.mp4",
+		"build": "remotion render src/index.tsx Stinger out/stinger.webm",
+		"build:ad": "remotion render src/index.tsx Ad out/ad.webm",
+		"build-image": "remotion still src/index.tsx BgImage out/bg-image.png",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},

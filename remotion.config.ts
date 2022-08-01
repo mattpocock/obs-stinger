@@ -1,7 +1,11 @@
 import {Config} from 'remotion';
 
-Config.Rendering.setImageFormat('jpeg');
-Config.Output.setOverwriteOutput(true);
+// Config.Output.setOverwriteOutput(true);
+// Config.Rendering.setImageFormat('jpeg');
+
+Config.Rendering.setImageFormat('png');
+Config.Output.setPixelFormat('yuva420p');
+Config.Output.setCodec('vp8');
 
 Config.Bundling.overrideWebpackConfig((currentConfiguration) => {
 	return {
